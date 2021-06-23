@@ -10,7 +10,7 @@ function App() {
   return (
     <div>
       <h1>
-        Micro-Frontend #2 Host
+        Micro-Frontend #3 Host
       </h1>
 
       <div

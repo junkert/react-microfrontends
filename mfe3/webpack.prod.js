@@ -2,10 +2,25 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 const ModuleFederationPlugin = require('webpack/lib/container/ModuleFederationPlugin');
 
 module.exports = {
-  mode: 'development',
-  devServer: {
-    port: 9002,
-  },
+  mode: 'production',
+
+  plugins: [
+    new ModuleFederationPlugin(
+      {
+        name: 'MFE2',
+        filename:
+          'remoteEntry.js',
+        remotes: {
+          MFE1:
+            'MFE1@https://rany.tk/mfe/mfe1/dist/remoteEntry.js',
+        },
+      }
+    ),
+    new HtmlWebpackPlugin({
+      template:
+        './public/index.html',
+    }),
+  ],
   module: {
     rules: [
       {
@@ -30,22 +45,4 @@ module.exports = {
       },
     ],
   },
-
-  plugins: [
-    new ModuleFederationPlugin(
-      {
-        name: 'MFE2',
-        filename:
-          'remoteEntry.js',
-        remotes: {
-          MFE1:
-            'MFE1@https://localhost:9001/mfe/mfe1/dist/remoteEntry.js',
-        },
-      }
-    ),
-    new HtmlWebpackPlugin({
-      template:
-        './public/index.html',
-    }),
-  ],
 };

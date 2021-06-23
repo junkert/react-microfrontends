@@ -4,7 +4,7 @@ const ModuleFederationPlugin = require('webpack/lib/container/ModuleFederationPl
 module.exports = {
   mode: 'development',
   devServer: {
-    port: 8083,
+    port: 9001,
   },
   module: {
     rules: [
@@ -39,7 +39,9 @@ module.exports = {
           'remoteEntry.js',
 
         exposes: {
-          './Button':
+          './ButtonMfe2':
+            './src/Button',
+          './ButtonMfe3':
             './src/Button',
         },
       }

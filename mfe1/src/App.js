@@ -1,13 +1,17 @@
 import React from 'react';
-import Button from './Button';
+import {ButtonMfe2, ButtonMfe3} from './Button';
 function App() {
   return (
     <div>
       <h1>MFE1</h1>
-      <Button>
+      <ButtonMfe2>
         {' '}
-        MFE1 Button
-      </Button>
+        MFE2 Button
+      </ButtonMfe2>
+      <ButtonMfe3>
+        {' '}
+        MFE3 Button
+      </ButtonMfe3>
     </div>
   );
 }
