@@ -1,5 +1,6 @@
 import React from 'react';
-import {ButtonMfe2, ButtonMfe3} from './Button';
+import ButtonMfe2 from './ButtonMfe2';
+import ButtonMfe3 from './ButtonMfe3';
 function App() {
   return (
     <div>

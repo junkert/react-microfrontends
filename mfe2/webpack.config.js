@@ -39,7 +39,7 @@ module.exports = {
           'remoteEntry.js',
         remotes: {
           MFE1:
-            'MFE1@https://localhost:9001/mfe/mfe1/dist/remoteEntry.js',
+            'MFE1@http://localhost:9001/dist/remoteEntry.js',
         },
       }
     ),

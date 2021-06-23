@@ -40,9 +40,9 @@ module.exports = {
 
         exposes: {
           './ButtonMfe2':
-            './src/Button',
+            './src/ButtonMfe2',
           './ButtonMfe3':
-            './src/Button',
+            './src/ButtonMfe3',
         },
       }
     ),
