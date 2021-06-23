@@ -13,3 +13,4 @@ Running the apps
 Note: a good way to test the lazy loading behavior is to use devtools throttle the network speed and then do a hard refresh (or disable cache and refresh):
 
 
+https://user-images.githubusercontent.com/13430288/123021218-88426e00-d388-11eb-9a1d-72cddf70eeb5.mov
