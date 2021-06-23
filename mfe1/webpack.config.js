@@ -39,10 +39,8 @@ module.exports = {
           'remoteEntry.js',
 
         exposes: {
-          './ButtonMfe2':
-            './src/ButtonMfe2',
-          './ButtonMfe3':
-            './src/ButtonMfe3',
+          './Menu':
+            './src/Menu',
         },
       }
     ),

@@ -1,9 +1,6 @@
 import React from 'react';
-const MFE2Button = React.lazy(
-  () => import('MFE1/ButtonMfe2')
-);
-const MFE3Button = React.lazy(
-  () => import('MFE1/ButtonMfe3')
+const Menu = React.lazy(
+  () => import('MFE1/Menu')
 );
 
 function App() {
@@ -24,9 +21,8 @@ function App() {
         <h3>
           Buttons from MFE1
         </h3>
-        <React.Suspense fallback='Loading Button'>
-          <MFE2Button />
-          <MFE3Button />
+        <React.Suspense fallback='Loading Menu'>
+          <Menu />
         </React.Suspense>
       </div>
     </div>

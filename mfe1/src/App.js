@@ -1,18 +1,13 @@
 import React from 'react';
-import ButtonMfe2 from './ButtonMfe2';
-import ButtonMfe3 from './ButtonMfe3';
+import Menu from './Menu';
 function App() {
   return (
     <div>
       <h1>MFE1</h1>
-      <ButtonMfe2>
+      <Menu>
         {' '}
-        MFE2 Button
-      </ButtonMfe2>
-      <ButtonMfe3>
-        {' '}
-        MFE3 Button
-      </ButtonMfe3>
+        MFE2 and 3 Button
+      </Menu>
     </div>
   );
 }
