@@ -14,4 +14,6 @@
 Note: a good way to test the lazy loading behavior is to use devtools throttle the network speed and then do a hard refresh (or disable cache and refresh):
 
 ## Demo
-https://github.com/junkert/react-microfrontends/blob/main/recording.mov?raw=true
+
+https://user-images.githubusercontent.com/726318/123145212-d6538200-d419-11eb-9c86-2eaf9a64528c.mov
+
