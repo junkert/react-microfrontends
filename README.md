@@ -13,6 +13,13 @@
 
 Note: a good way to test the lazy loading behavior is to use devtools throttle the network speed and then do a hard refresh (or disable cache and refresh):
 
+## Future Work
+### Monorepo to separate repos
+In our example we include each microFE into a single monolithic repository. We decided to use this
+pattern in order to simplify our example here for demo purposes. This means that each individual
+application can be split into its own repository at the `mfe#` level in this repository. In the future
+we may do this to better show how this design pattern might work in real life situations.
+
 ## Demo
 
 https://user-images.githubusercontent.com/726318/123145212-d6538200-d419-11eb-9c86-2eaf9a64528c.mov
